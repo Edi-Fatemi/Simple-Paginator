@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a2b3c;
+}
+.paginator{
+  position: relative;
+  background: linear-gradient( #101f27f1 30%  , #101f27 50%);
+  color: #fff;
+  height: 70px;
+  width: 800px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 50px;
+}
+.paginator button{
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  font-size: 2em;
+  line-height: 70px;
+  background: transparent;
+  color: #fff;
+  opacity: 0.5;
+  transition: all 300ms ease-in-out;
+}
+.paginator button:hover{
+  opacity: 1;
+  color: #1f9cff;
+}
+.paginator button:active{
+  filter: invert(1);
+  opacity: 1;
+  color: #1f9cff;
+}
+.paginator .prev{
+  left: 5px;
+}
+.paginator .next{
+  right: 5px;
+}
+.paginator .page{
+  font-size: 25px;
+  padding: 0 20px;
+  opacity: 0.2;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+.paginator:hover .page{
+  filter: blur(1px);
+  opacity: 0.2;
+}
+.paginator .page:hover{
+  filter: blur(0px);
+  opacity: 1;
+  color: #1f9cff;
+}
+.paginator .page:active{
+  filter: invert(1);
+  opacity: 1;
+  color: #1f9cff;
+}
+
